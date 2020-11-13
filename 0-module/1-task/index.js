@@ -1,9 +1,7 @@
-/**
- * sum
- * @param {number} m
- * @param {number} n
- * @returns {number}
- */
+
+var(m) = 1;
+var(n) = 2;
+
 function sum(m, n) {
-  // ваш код...
+    return m + n;
 }
