@@ -4,8 +4,14 @@
  * @returns {number}
  */
 function factorial(n) {
-  let factorial = 1; 
-  for (i = 1; i <= n; i++) { 
-  return(factorial = i*factorial);
+  let result = 1;
+  if (n === 0 || n === 1) {
+    return result;
   }
+
+  for (let i = 1; i <= n; i++) {
+    result = result * i;
+  }
+
+  return result;
 }
