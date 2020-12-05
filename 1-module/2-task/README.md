@@ -15,8 +15,10 @@ function print(text) {
  * Эту функцию нужно поменять так,
  * чтобы функция sayHello работала корректно
  */
-function isValid(name) {
-  // ваш код...
+function isValid(oneWord) {
+    return !!oneWord && !oneWord.includes(' ') && oneWord.length >= 2;
+  }
+
 }
 
 /**
