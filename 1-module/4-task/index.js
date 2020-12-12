@@ -1,10 +1,12 @@
 /**
- * checkSpam
- * @param {string} str
- * @returns {boolean}
+ * приведение строки к машиночитаемому виду
+ * 
+ * проверка строки на совпадение с образцом
  */
-function checkSpam(str) {
-  let strLowerCase = str.toLowerCase();
-
-  return strLowerCase.includes('1xbet') || strLowerCase.includes('xxx');
+function toMachinesRead(str) {
+  let strMachineRead = 
+      str.replace(/ /g, "").toLowerCase()
+return console.log(strMachineRead)
 }
+
+toMachinesRead("Мы тренируем машиночитаемость.")
