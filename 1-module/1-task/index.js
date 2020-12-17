@@ -3,6 +3,8 @@
  * @param {number} n
  * @returns {number}
  */
+
+
 function factorial(n) {
   let result = 1;
   if (n === 0 || n === 1) {
@@ -15,3 +17,4 @@ function factorial(n) {
 
   return result;
 }
+console.log(factorial(5))

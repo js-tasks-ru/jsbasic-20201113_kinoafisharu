@@ -8,5 +8,3 @@ function toMachinesRead(str) {
       str.replace(/\./g, "").replace(/ /g, "").toLowerCase()
 return console.log(strMachineRead)
 }
-
-toMachinesRead("Мы тренируем машиночитаемость.")

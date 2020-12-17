@@ -1,18 +1,16 @@
 /**
- * truncate
- * @param {string} str
- * @param {number} maxlength
- * @returns {string}
+ * отсечь хвост длинной строки, заменив на троеточие
+ * 
+ * 
+ * 
  */
 function truncate(str, maxlength) {
-  let strLength = str.length;
-  let isExceedMaxlength = strLength > maxlength;
-
-  if (isExceedMaxlength) {
-    let shortenStr = str.slice(0, maxlength - 1);
-
-    return `${shortenStr}…`;
+  let strLength = str.length
+  if (strLength > maxlength) {
+    let shortenStr = str.slice(0, maxlength - 1)
+    return `${shortenStr}…`
   }
-
-  return str;
+  return str
 }
+
+console.log(truncate("Мы тренируемся усекать строки", 20))

@@ -7,9 +7,9 @@ function sumSalary(salaries) {
   let sumOfSalaries = 0;
 
   for (let key in salaries) {
-    let isSalary = typeof salaries[key] === 'number';
+    
 
-    if (isSalary) {
+    if (let isSalary = typeof salaries[key] === 'number') {
       sumOfSalaries += salaries[key];
     }
   }
