@@ -5,7 +5,7 @@
  */
 function toMachinesRead(str) {
   let strMachineRead = 
-      str.replace(/ /g, "").toLowerCase()
+      str.replace(/\./g, "").replace(/ /g, "").toLowerCase()
 return console.log(strMachineRead)
 }
 
